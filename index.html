@@ -3,534 +3,863 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Bengaly Doumbia</title>
+  <title>Portfolio — Bengaly Doumbia · BTS SIO SISR</title>
   <meta name="description" content="Portfolio de Bengaly Doumbia, étudiant en BTS SIO SISR, Élancourt." />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-<nav>
-  <div class="nav-logo">B.DOUMBIA</div>
-  <ul class="nav-links">
-    <li><a href="#home">Accueil</a></li>
-    <li><a href="#about">À propos</a></li>
-    <li><a href="#skills">Compétences</a></li>
-    <li><a href="#parcours">Parcours</a></li>
-    <li><a href="#experience">Expériences</a></li>
-    <li><a href="#bts">BTS SIO</a></li>
-    <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#stage">Stage</a></li>
-    <li><a href="#veille">Veille</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li>
-      <button id="theme-toggle" aria-label="Changer le thème">
-        <span id="theme-icon" class="theme-icon">☀️</span>
-      </button>
-    </li>
-  </ul>
+<!-- ══════════════════════ NAV ══════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <span class="logo-b">B</span><span class="logo-d">D</span>
+      <span class="logo-sep">·</span>
+      <span class="logo-full">BENGALY DOUMBIA</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">Profil</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#bts">BTS SIO</a></li>
+      <li><a href="#certifications">Certifs</a></li>
+      <li><a href="#veille">Veille</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button id="theme-toggle" aria-label="Thème">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-<div id="home" style="min-height:100vh; display:flex; align-items:center; justify-content:center; padding:6rem 0 4rem; position:relative; overflow:hidden;">
-  <div class="hero-bg"></div>
-  <div class="grid-lines"></div>
-  <div class="hero-content">
-    <div class="hero-text">
-      <div class="hero-tag">
-        <span></span> Recherche stage · 25 mai → 3 juillet 2026 · Île-de-France
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section id="home" class="hero">
+  <div class="hero-noise"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow g1"></div>
+  <div class="hero-glow g2"></div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-status">
+        <span class="pulse"></span>
+        Disponible · Stage 25 mai → 3 juillet 2026 · Île-de-France
       </div>
-      <h1 class="hero-name">Bengaly<br><em>DOUMBIA</em></h1>
-      <p class="hero-sub">
-        Étudiant en <strong>1ère année de BTS SIO SISR</strong> au lycée Jean Vilar (Plaisir).<br>
-        Passionné par l'informatique, les réseaux et la cybersécurité.
+      <h1 class="hero-name">
+        <span class="line-bengaly">BENGALY</span>
+        <span class="line-doumbia">DOUMBIA</span>
+      </h1>
+      <p class="hero-role">
+        <span class="mono">_</span> Étudiant BTS SIO <strong>SISR</strong> · Lycée Jean Vilar, Plaisir
       </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Me contacter</a>
-        <a href="assets/docs/CV_Bengaly_Doumbia.pdf" class="btn btn-ghost" download>📄 Télécharger mon CV</a>
+      <p class="hero-desc">
+        Passionné par les réseaux, les systèmes et la cybersécurité. Je construis des infrastructures robustes et fiables.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="cta-primary">Me contacter</a>
+        <a href="assets/docs/CV_Bengaly_Doumbia.pdf" class="cta-secondary" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Télécharger le CV
+        </a>
       </div>
     </div>
-    <div class="hero-photo-wrap">
-      <img src="assets/img/photo.png" alt="Photo de Bengaly Doumbia" class="hero-photo" />
-    </div>
-  </div>
-</div>
-
-<section id="about">
-  <p class="section-label">À propos de moi</p>
-  <h2 class="section-title">Mon <span>introduction</span></h2>
-  <div class="about-grid">
-    <div>
-      <div class="about-stats">
-        <div class="stat-card"><div class="num">20</div><p>ans<br>né le 13 mai 2006</p></div>
-        <div class="stat-card"><div class="num">1re</div><p>année<br>BTS SIO</p></div>
-        <div class="stat-card"><div class="num">B</div><p>Permis<br>de conduire</p></div>
-        <div class="stat-card"><div class="num">BAFA</div><p>Formation<br>2023-2024</p></div>
-      </div>
-      <div style="margin-top:1.5rem; text-align:center;">
-        <a href="assets/docs/CV_Bengaly_Doumbia.pdf" download class="btn btn-ghost" style="font-size:.75rem;">📄 Voir mon CV</a>
-      </div>
-    </div>
-    <div class="about-info">
-      <p>Actuellement en première année de <strong>BTS SIO (Services Informatiques aux Organisations)</strong> au lycée Jean Vilar à Plaisir, option <strong>SISR</strong>, je suis passionné par l'informatique, les réseaux et la cybersécurité. Motivé et curieux, je cherche constamment à développer mes compétences techniques à travers des projets concrets.</p>
-      <div style="margin-top:1.5rem;">
-        <div class="info-row"><span class="icon">📍</span> 2 rue Alfred de Musset, 78990 Élancourt</div>
-        <div class="info-row"><span class="icon">📞</span> <a href="tel:0783213736" style="color:var(--muted); text-decoration:none;">0783213736</a></div>
-        <div class="info-row"><span class="icon">✉️</span> <a href="mailto:doumbiabengaly78@gmail.com" style="color:var(--muted); text-decoration:none;">doumbiabengaly78@gmail.com</a></div>
-        <div class="info-row"><span class="icon">🗣️</span> Anglais B2 · Espagnol B1 · Dioula (langue maternelle)</div>
-        <div class="info-row"><span class="icon">🎯</span> Manga · Basketball en club · Football</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="skills">
-  <p class="section-label">Compétences</p>
-  <h2 class="section-title">Mes <span>compétences</span></h2>
-  <div class="skills-grid">
-    <div class="skill-card"><h3>💾 Bases de données</h3><div><span class="skill-tag">Création de BDD</span><span class="skill-tag">MySQL</span><span class="skill-tag">SQL</span></div></div>
-    <div class="skill-card"><h3>🖥️ Développement</h3><div><span class="skill-tag">Python</span><span class="skill-tag">Visual Studio Code</span><span class="skill-tag">Automatisation</span></div></div>
-    <div class="skill-card"><h3>📊 Bureautique</h3><div><span class="skill-tag">Pack Office</span><span class="skill-tag">Word</span><span class="skill-tag">Excel</span></div></div>
-    <div class="skill-card"><h3>🛡️ Sécurité civile</h3><div><span class="skill-tag">PSI niveau 1</span><span class="skill-tag">Prévention et secours civils</span></div></div>
-    <div class="skill-card"><h3>🌍 Langues</h3><div><span class="skill-tag">Anglais B2</span><span class="skill-tag">Espagnol B1</span><span class="skill-tag">Dioula (maternelle)</span><span class="skill-tag">Français</span></div></div>
-    <div class="skill-card"><h3>👥 Animation & accueil</h3><div><span class="skill-tag">Accueil client</span><span class="skill-tag">Animation BAFA</span><span class="skill-tag">Travail en équipe</span></div></div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="parcours">
-  <p class="section-label">Formation</p>
-  <h2 class="section-title">Mon <span>parcours scolaire</span></h2>
-  <div class="timeline">
-    <div class="tl-item"><div class="tl-date">2025 – 2026</div><h3>BTS SIO SISR – Lycée Jean Vilar, Plaisir</h3><p>Services Informatiques aux Organisations, option SISR — 1ère année en cours.</p></div>
-    <div class="tl-item"><div class="tl-date">2024 – 2025</div><h3>1ère année de BUT Informatique – IUT Vélizy</h3><p>Apprentissage des fondamentaux de l'informatique.</p></div>
-    <div class="tl-item"><div class="tl-date">2021 – 2024</div><h3>BAC STI2D – Lycée Émilie de Breteuil</h3><p>Spécialité SIN (Systèmes d'Information et Numérique).<br>Projet de fin d'année : automatisation d'un babyfoot.</p></div>
-    <div class="tl-item"><div class="tl-date">2019 – 2020</div><h3>Brevet – Collège Alexandre Dumas</h3><p>Obtention du brevet avec mention bien.</p></div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section id="experience">
-  <p class="section-label">Expériences</p>
-  <h2 class="section-title">Mes <span>expériences</span></h2>
-  <div class="exp-grid">
-    <div class="exp-card"><div class="exp-date">2024 – 2025</div><h3>Paaj Champollion — Élancourt</h3><ul><li>Accueil</li><li>Animateur</li></ul></div>
-    <div class="exp-card"><div class="exp-date">2024 – 2025</div><h3>COLOR ADO — Fontenay-le-Fleury</h3><ul><li>Accueil</li><li>Animateur</li></ul></div>
-    <div class="exp-card"><div class="exp-date">2023 – 2024</div><h3>Été en sable — Montigny</h3><ul><li>Accueil client</li><li>Animateur</li></ul></div>
-    <div class="exp-card"><div class="exp-date">2023 – 2024</div><h3>Formation BAFA</h3><ul><li>Brevet d'Aptitude aux Fonctions d'Animateur</li><li>Encadrement et animation de groupes</li></ul></div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- BTS SIO enrichi -->
-<section id="bts">
-  <p class="section-label">Formation</p>
-  <h2 class="section-title">Qu'est-ce que le BTS <span>SIO</span> ?</h2>
-
-  <div class="bts-stats-row">
-    <div class="bts-stat"><div class="bts-stat-num">Bac+2</div><div class="bts-stat-label">Diplôme d'État reconnu</div></div>
-    <div class="bts-stat"><div class="bts-stat-num">2 ans</div><div class="bts-stat-label">Formation intensive théorie &amp; pratique</div></div>
-    <div class="bts-stat"><div class="bts-stat-num">6</div><div class="bts-stat-label">Semaines de stage en entreprise par année</div></div>
-  </div>
-
-  <p class="bts-intro-text">Cette formation couvre l'ensemble du cycle de vie des services informatiques : de la <strong>conception</strong> à la <strong>mise en production</strong>, en passant par l'<strong>exploitation</strong> et la <strong>sécurisation</strong>. Les titulaires du BTS SIO sont immédiatement opérationnels en entreprise grâce à une pédagogie orientée projets et une immersion professionnelle via les stages.</p>
-
-  <div class="bts-domains-grid">
-    <div class="bts-domain-card"><span class="bts-domain-icon">🖥️</span><div><strong>Gestion de parc</strong><p>Infrastructure &amp; matériel</p></div></div>
-    <div class="bts-domain-card"><span class="bts-domain-icon">{ }</span><div><strong>Développement</strong><p>Applications &amp; web</p></div></div>
-    <div class="bts-domain-card"><span class="bts-domain-icon">⚙️</span><div><strong>Administration</strong><p>Réseaux &amp; systèmes</p></div></div>
-    <div class="bts-domain-card"><span class="bts-domain-icon">🛡️</span><div><strong>Cybersécurité</strong><p>Protection &amp; conformité</p></div></div>
-  </div>
-
-  <div class="bts-why-box">
-    <h3 class="bts-why-title">🏢 Pourquoi recruter un profil BTS SIO ?</h3>
-    <div class="bts-why-grid">
-      <div class="bts-why-item"><strong>⚡ Opérationnel dès le premier jour</strong><p>La formation allie théorie solide et pratique intensive, avec des projets réels et des mises en situation professionnelles.</p></div>
-      <div class="bts-why-item"><strong>🏅 Certifications complémentaires</strong><p>Les étudiants sont encouragés à obtenir des certifications reconnues (ANSSI, Cisco, RGPD…) qui renforcent leur expertise.</p></div>
-      <div class="bts-why-item"><strong>🔄 Polyvalence technique</strong><p>Réseau, système, développement, cybersécurité : un profil BTS SIO s'adapte aux différents besoins IT de l'entreprise.</p></div>
-      <div class="bts-why-item"><strong>📡 Veille &amp; apprentissage continu</strong><p>La veille technologique fait partie intégrante de la formation, garantissant un profil toujours à jour sur les dernières technologies.</p></div>
-    </div>
-  </div>
-
-  <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.3rem;text-align:center;margin:3rem 0 1.5rem;color:var(--text);">Deux spécialités au choix ↓</h3>
-  <div class="bts-grid">
-    <div class="bts-card active">
-      <div class="bts-badge">✓ Mon option actuelle</div>
-      <h3>Option SISR</h3>
-      <p>Solutions d'Infrastructure, Systèmes et Réseaux. Formation aux métiers de l'administration des réseaux et systèmes informatiques.</p>
-      <ul><li>Administration systèmes Windows/Linux</li><li>Configuration réseaux</li><li>Sécurité informatique</li><li>Virtualisation et cloud</li><li>Support et maintenance</li></ul>
-    </div>
-    <div class="bts-card">
-      <div class="bts-badge sisr">Autre option</div>
-      <h3>Option SLAM</h3>
-      <p>Solutions Logicielles et Applications Métiers. Formation aux métiers du développement d'applications web, mobiles et logicielles.</p>
-      <ul><li>Développement d'applications</li><li>Bases de données (MySQL, SQL)</li><li>Programmation (Python, etc.)</li><li>Gestion de projets informatiques</li><li>Tests et maintenance logicielle</li></ul>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <p class="section-label">Certifications</p>
-  <h2 class="section-title">Mes <span>certifications</span></h2>
-  <div class="certs-grid">
-    <div class="cert-card">
-      <div class="cert-header">
-        <div class="cert-logo-anssi">ANSSI<span>SecNum</span></div>
-        <div class="cert-meta">
-          <div class="cert-badge-ok">✓ Obtenu</div>
-          <div class="cert-date">22 février 2026</div>
+    <div class="hero-right">
+      <div class="photo-frame">
+        <div class="photo-border"></div>
+        <img src="assets/img/photo.png" alt="Bengaly Doumbia" class="hero-photo" />
+        <div class="photo-tag">
+          <span class="mono">BTS SIO SISR</span>
         </div>
       </div>
-      <h3 class="cert-title">SecNumacadémie — MOOC ANSSI</h3>
-      <p class="cert-desc">Certification officielle de l'Agence Nationale de la Sécurité des Systèmes d'Information, validant les 4 modules de cybersécurité.</p>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════ ABOUT ══════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">01 — Profil</span>
+      <h2 class="section-title">Mon <em>introduction</em></h2>
+    </div>
+    <div class="about-layout">
+      <div class="about-stats">
+        <div class="stat-block">
+          <div class="stat-num">20</div>
+          <div class="stat-desc">ans · né le 13 mai 2006</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num">1<sup>re</sup></div>
+          <div class="stat-desc">année BTS SIO</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num">B</div>
+          <div class="stat-desc">Permis de conduire</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num">BAFA</div>
+          <div class="stat-desc">Formation 2023–2024</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p>Actuellement en première année de <strong>BTS SIO (Services Informatiques aux Organisations)</strong> au lycée Jean Vilar à Plaisir, option <strong>SISR</strong>, je suis passionné par l'informatique, les réseaux et la cybersécurité. Motivé et curieux, je cherche à développer mes compétences techniques à travers des projets concrets.</p>
+        <div class="info-list">
+          <div class="info-item"><span class="info-icon">📍</span> 2 rue Alfred de Musset, 78990 Élancourt</div>
+          <div class="info-item"><span class="info-icon">📞</span> <a href="tel:0783213736">0783213736</a></div>
+          <div class="info-item"><span class="info-icon">✉️</span> <a href="mailto:doumbiabengaly78@gmail.com">doumbiabengaly78@gmail.com</a></div>
+          <div class="info-item"><span class="info-icon">🗣️</span> Anglais B2 · Espagnol B1 · Dioula (maternelle)</div>
+          <div class="info-item"><span class="info-icon">🎯</span> Manga · Basketball en club · Football</div>
+        </div>
+        <a href="assets/docs/CV_Bengaly_Doumbia.pdf" download class="cta-secondary" style="margin-top:1.5rem; display:inline-flex;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Voir mon CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ SKILLS ══════════════════════ -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">02 — Compétences</span>
+      <h2 class="section-title">Mes <em>compétences</em></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">💾</div>
+        <h3>Bases de données</h3>
+        <div class="skill-tags">
+          <span>Création de BDD</span><span>MySQL</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🖥️</div>
+        <h3>Développement</h3>
+        <div class="skill-tags">
+          <span>Python</span><span>Visual Studio Code</span><span>Automatisation</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <h3>Bureautique</h3>
+        <div class="skill-tags">
+          <span>Pack Office</span><span>Word</span><span>Excel</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🛡️</div>
+        <h3>Sécurité civile</h3>
+        <div class="skill-tags">
+          <span>PSI niveau 1</span><span>Prévention et secours civils</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🌍</div>
+        <h3>Langues</h3>
+        <div class="skill-tags">
+          <span>Anglais B2</span><span>Espagnol B1</span><span>Dioula</span><span>Français</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">👥</div>
+        <h3>Animation & accueil</h3>
+        <div class="skill-tags">
+          <span>Accueil client</span><span>Animation BAFA</span><span>Travail en équipe</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ PARCOURS ══════════════════════ -->
+<section id="parcours" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">03 — Formation & Expériences</span>
+      <h2 class="section-title">Mon <em>parcours</em></h2>
+    </div>
+    <div class="timeline-layout">
+      <div class="timeline-col">
+        <h3 class="tl-group-title"><span>🎓</span> Formation</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-date">2025 – 2026</span>
+              <h4>BTS SIO SISR — Lycée Jean Vilar, Plaisir</h4>
+              <p>Services Informatiques aux Organisations, option SISR — 1ère année en cours.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-date">2024 – 2025</span>
+              <h4>1ère année BUT Informatique — IUT Vélizy</h4>
+              <p>Apprentissage des fondamentaux de l'informatique.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-date">2021 – 2024</span>
+              <h4>BAC STI2D — Lycée Émilie de Breteuil</h4>
+              <p>Spécialité SIN (Systèmes d'Information et Numérique). Projet : automatisation d'un babyfoot.</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-date">2019 – 2020</span>
+              <h4>Brevet — Collège Alexandre Dumas</h4>
+              <p>Obtention du brevet avec mention bien.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-col">
+        <h3 class="tl-group-title"><span>💼</span> Expériences</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot tl-dot-accent2"></div>
+            <div class="tl-content">
+              <span class="tl-date">2024 – 2025</span>
+              <h4>Paaj Champollion — Élancourt</h4>
+              <p>Accueil & Animateur</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot tl-dot-accent2"></div>
+            <div class="tl-content">
+              <span class="tl-date">2024 – 2025</span>
+              <h4>COLOR ADO — Fontenay-le-Fleury</h4>
+              <p>Accueil & Animateur</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot tl-dot-accent2"></div>
+            <div class="tl-content">
+              <span class="tl-date">2023 – 2024</span>
+              <h4>Été en sable — Montigny</h4>
+              <p>Accueil client & Animateur</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot tl-dot-accent2"></div>
+            <div class="tl-content">
+              <span class="tl-date">2023 – 2024</span>
+              <h4>Formation BAFA</h4>
+              <p>Brevet d'Aptitude aux Fonctions d'Animateur. Encadrement et animation de groupes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ PROJETS ══════════════════════ -->
+<section id="projets" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">04 — Projets BTS SIO</span>
+      <h2 class="section-title">Mes <em>projets</em></h2>
+      <p class="section-desc">Dans le cadre de mon BTS SIO SISR, j'ai réalisé trois missions techniques pour l'association <strong>Soccer78</strong>, une association de football basée dans les Yvelines.</p>
+    </div>
+
+    <!-- PROJET 1 -->
+    <div class="projet-card" id="p1">
+      <div class="projet-header">
+        <div class="projet-number">01</div>
+        <div class="projet-title-wrap">
+          <span class="projet-badge">Mission SISR</span>
+          <h3 class="projet-title">Infrastructure réseau locale — Soccer78</h3>
+          <div class="projet-tags">
+            <span>Windows Server 2022</span>
+            <span>VMware</span>
+            <span>DHCP</span>
+            <span>Prise en main à distance</span>
+            <span>Linux</span>
+          </div>
+        </div>
+        <button class="projet-toggle" data-target="p1-body" aria-expanded="false">
+          <span class="toggle-icon">+</span>
+        </button>
+      </div>
+      <div class="projet-body" id="p1-body">
+        <div class="projet-content">
+          <div class="projet-section">
+            <h4><span class="projet-section-icon">📋</span> Contexte & Objectifs</h4>
+            <p>Soccer78 est une association loi 1901 qui promeut le football dans le département des Yvelines. Après une forte croissance depuis 2023 et l'embauche de salariés, l'association a déménagé dans des locaux plus spacieux et acquis 10 postes informatiques, 2 imprimantes et un serveur.</p>
+            <div class="objectifs-grid">
+              <div class="objectif-item">
+                <span class="objectif-num">1</span>
+                <span>Installer un serveur (Linux et/ou Windows) et l'adresser sur le réseau</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">2</span>
+                <span>Paramétrer un serveur DHCP</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">3</span>
+                <span>Installer une solution de prise en main à distance (Linux↔Windows)</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">4</span>
+                <span>Installer un client réseau (Linux et Windows)</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">5</span>
+                <span>Réaliser un schéma réseau complet</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">6</span>
+                <span>Rédiger une documentation technique complète</span>
+              </div>
+            </div>
+          </div>
+          <div class="projet-section">
+            <h4><span class="projet-section-icon">📄</span> Compte rendu — Réalisations</h4>
+            <div class="cr-steps">
+              <div class="cr-step">
+                <div class="cr-step-title">Installation de la machine virtuelle Windows 11</div>
+                <p>Création de la machine virtuelle via VMware avec l'option Custom Advanced. Sélection de l'ISO Windows 11, stockage sur le disque D, configuration de la mémoire (minimum 4 Go), processeur (1 CPU / 4 Cores), contrôleur SATA natif pour la compatibilité Windows 11, disque virtuel de 64 Go.</p>
+              </div>
+              <div class="cr-step">
+                <div class="cr-step-title">Configuration du serveur DHCP</div>
+                <p>Activation du service DHCP sur le Windows Server 2022 pour attribuer automatiquement les adresses IP aux postes clients du réseau Soccer78.</p>
+              </div>
+              <div class="cr-step">
+                <div class="cr-step-title">Prise en main à distance</div>
+                <p>Installation et configuration d'une solution de prise en main à distance sans recours à Internet, permettant au technicien bénévole d'intervenir depuis son poste en cas de problème.</p>
+              </div>
+              <div class="cr-step">
+                <div class="cr-step-title">Documentation technique</div>
+                <p>Rédaction du schéma réseau, plan d'adressage, note sur les licences utilisées et procédure complète au format PDF pour le technicien informatique.</p>
+              </div>
+            </div>
+          </div>
+          <div class="projet-deliverables">
+            <span class="del-label">Documents rendus :</span>
+            <span class="del-item">Tableau de répartition des tâches</span>
+            <span class="del-item">Note sur les licences</span>
+            <span class="del-item">Schéma réseau</span>
+            <span class="del-item">Plan d'adressage</span>
+            <span class="del-item">Documentation technique PDF</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJET 2 -->
+    <div class="projet-card" id="p2">
+      <div class="projet-header">
+        <div class="projet-number">02</div>
+        <div class="projet-title-wrap">
+          <span class="projet-badge">Mission SISR</span>
+          <h3 class="projet-title">Extension réseau, AD & impression — Soccer78</h3>
+          <div class="projet-tags">
+            <span>pfSense</span>
+            <span>Active Directory</span>
+            <span>CUPS</span>
+            <span>Switch Aruba</span>
+            <span>Debian</span>
+          </div>
+        </div>
+        <button class="projet-toggle" data-target="p2-body" aria-expanded="false">
+          <span class="toggle-icon">+</span>
+        </button>
+      </div>
+      <div class="projet-body" id="p2-body">
+        <div class="projet-content">
+          <div class="projet-section">
+            <h4><span class="projet-section-icon">📋</span> Contexte & Objectifs</h4>
+            <p>Suite à la mission 1, le réseau fonctionne mais des besoins supplémentaires sont apparus : le nombre de salariés a augmenté, l'accès Internet est nécessaire pour les mises à jour, les impressions sont mal gérées et les intervenants extérieurs ne peuvent pas accéder au réseau.</p>
+            <div class="objectifs-grid">
+              <div class="objectif-item">
+                <span class="objectif-num">1</span>
+                <span>Ouvrir le réseau local sur Internet via routeur/pare-feu pfSense</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">2</span>
+                <span>Configurer des règles de sécurité (HTTP et HTTPS uniquement)</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">3</span>
+                <span>Installer un serveur d'impression réseau (CUPS sous Debian)</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">4</span>
+                <span>Créer un domaine Active Directory, des UO et des utilisateurs</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">5</span>
+                <span>Paramétrer les droits d'accès et un espace partagé de 10 Go</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">6</span>
+                <span>Configurer un switch Aruba de niveau 2</span>
+              </div>
+            </div>
+          </div>
+          <div class="projet-section">
+            <h4><span class="projet-section-icon">📄</span> Compte rendu — Réalisations</h4>
+            <div class="cr-steps">
+              <div class="cr-step">
+                <div class="cr-step-title">Installation & configuration pfSense</div>
+                <p>Création de la VM pfSense via VMware (Custom Advanced), configuration de deux cartes réseau (LAN et NAT), attribution manuelle d'une IP fixe hors DHCP. Vérification de la connectivité Internet avec un ping vers 8.8.8.8 — 3 paquets envoyés et reçus avec succès.</p>
+              </div>
+              <div class="cr-step">
+                <div class="cr-step-title">Active Directory — Domaine soccer78grpe.intra</div>
+                <p>Création du domaine AD sur Windows Server 2022. Mise en place de 3 unités organisationnelles : Direction, Salariés, Bénévoles. Création d'utilisateurs avec identifiant prenom.nom, mots de passe personnalisés renouvelés tous les 30 jours. Espace de stockage partagé public de 10 Go créé sur le serveur.</p>
+              </div>
+              <div class="cr-step">
+                <div class="cr-step-title">Serveur d'impression CUPS sous Debian</div>
+                <p>Installation de Debian sans interface graphique sous VMware. Configuration du réseau en NAT et ajout d'une carte réseau supplémentaire. Installation du service CUPS, accès à l'interface web via IP:631. Création de deux imprimantes fictives Brother HL2250 avec pilotes génériques, accessible depuis l'interface de gestion des tâches.</p>
+              </div>
+              <div class="cr-step">
+                <div class="cr-step-title">Switch Aruba — connexion réseau</div>
+                <p>Branchement et configuration du switch Aruba, attribution d'une adresse IP et activation de tous les ports pour la connexion au réseau local.</p>
+              </div>
+            </div>
+          </div>
+          <div class="projet-deliverables">
+            <span class="del-label">Documents rendus :</span>
+            <span class="del-item">Tableau de répartition des tâches</span>
+            <span class="del-item">Schéma réseau actualisé</span>
+            <span class="del-item">Comptes rendus détaillés</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJET 3 -->
+    <div class="projet-card" id="p3">
+      <div class="projet-header">
+        <div class="projet-number">03</div>
+        <div class="projet-title-wrap">
+          <span class="projet-badge">Mission SISR</span>
+          <h3 class="projet-title">Sécurisation, VLAN & gestion des incidents — Soccer78</h3>
+          <div class="projet-tags">
+            <span>Squid Proxy</span>
+            <span>GLPI</span>
+            <span>NTP</span>
+            <span>VLAN</span>
+            <span>Wi-Fi</span>
+            <span>SquidGuard</span>
+          </div>
+        </div>
+        <button class="projet-toggle" data-target="p3-body" aria-expanded="false">
+          <span class="toggle-icon">+</span>
+        </button>
+      </div>
+      <div class="projet-body" id="p3-body">
+        <div class="projet-content">
+          <div class="projet-section">
+            <h4><span class="projet-section-icon">📋</span> Contexte & Objectifs</h4>
+            <p>Le réseau fonctionne mais de nouveaux dysfonctionnements apparaissent : navigation sur des sites dangereux, postes mal synchronisés (heure d'été), aucune procédure de gestion des incidents, intervenants extérieurs sans port Ethernet.</p>
+            <div class="objectifs-grid">
+              <div class="objectif-item">
+                <span class="objectif-num">1</span>
+                <span>Sécuriser les accès Internet via proxy Squid + SquidGuard</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">2</span>
+                <span>Fiabiliser les horloges réseau (serveur NTP)</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">3</span>
+                <span>Installer GLPI — gestion des incidents informatiques</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">4</span>
+                <span>Configurer une borne Wi-Fi sécurisée</span>
+              </div>
+              <div class="objectif-item">
+                <span class="objectif-num">5</span>
+                <span>Mettre en place des VLAN (VLAN 10 filaire / VLAN 20 Wi-Fi)</span>
+              </div>
+            </div>
+          </div>
+          <div class="projet-section">
+            <h4><span class="projet-section-icon">📄</span> Compte rendu — Réalisations</h4>
+            <div class="cr-steps">
+              <div class="cr-step">
+                <div class="cr-step-title">Proxy Squid + SquidGuard sur pfSense</div>
+                <p>Installation des paquets Squid et SquidGuard depuis l'interface pfSense (System → Package Manager). Configuration du proxy : Interface LAN, Port 3128, mode Transparent HTTP. Création d'un certificat serveur SSL (Squid_Proxy_SSL, 2048 bits, 1 an). Configuration des listes noires dans les ACLs de SquidGuard — vérification réussie du blocage de Facebook.</p>
+              </div>
+              <div class="cr-step">
+                <div class="cr-step-title">Serveur NTP (synchronisation horaire)</div>
+                <p>Installation d'un serveur de temps NTP pour garantir la synchronisation horaire de tous les équipements du réseau (postes, switch, serveurs), avec configuration automatique sur les clients.</p>
+              </div>
+              <div class="cr-step">
+                <div class="cr-step-title">GLPI — Gestion des incidents</div>
+                <p>Installation et configuration de GLPI avec différents niveaux d'accès : administrateur, technicien et utilisateur simple. Remplacement du casier papier par une solution numérique de suivi des incidents.</p>
+              </div>
+              <div class="cr-step">
+                <div class="cr-step-title">VLAN & routage pfSense</div>
+                <p>Ajout d'une vMnet3 bridgée sur pfSense. Configuration des VLAN sur le switch : VLAN 10 (réseau filaire 192.168.10.0/24) et VLAN 20 (réseau Wi-Fi 172.20.1.0/24). Paramétrage du routage inter-VLAN sur pfSense pour garantir l'accès Internet aux deux segments.</p>
+              </div>
+            </div>
+          </div>
+          <div class="projet-deliverables">
+            <span class="del-label">Technologies mises en œuvre :</span>
+            <span class="del-item">pfSense</span>
+            <span class="del-item">Squid / SquidGuard</span>
+            <span class="del-item">GLPI</span>
+            <span class="del-item">NTP Linux</span>
+            <span class="del-item">VLAN switch</span>
+            <span class="del-item">Wi-Fi sécurisé</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════ BTS SIO ══════════════════════ -->
+<section id="bts" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">05 — Formation</span>
+      <h2 class="section-title">Qu'est-ce que le BTS <em>SIO</em> ?</h2>
+    </div>
+
+    <div class="bts-stats-row">
+      <div class="bts-stat"><span class="bts-num">Bac+2</span><span class="bts-label">Diplôme d'État reconnu</span></div>
+      <div class="bts-stat"><span class="bts-num">2 ans</span><span class="bts-label">Formation théorie & pratique</span></div>
+      <div class="bts-stat"><span class="bts-num">6</span><span class="bts-label">Semaines de stage par an</span></div>
+    </div>
+
+    <p class="bts-intro">Cette formation couvre l'ensemble du cycle de vie des services informatiques : de la <strong>conception</strong> à la <strong>mise en production</strong>, en passant par l'<strong>exploitation</strong> et la <strong>sécurisation</strong>.</p>
+
+    <div class="bts-domains">
+      <div class="bts-domain"><span>🖥️</span><div><strong>Gestion de parc</strong><p>Infrastructure & matériel</p></div></div>
+      <div class="bts-domain"><span>{ }</span><div><strong>Développement</strong><p>Applications & web</p></div></div>
+      <div class="bts-domain"><span>⚙️</span><div><strong>Administration</strong><p>Réseaux & systèmes</p></div></div>
+      <div class="bts-domain"><span>🛡️</span><div><strong>Cybersécurité</strong><p>Protection & conformité</p></div></div>
+    </div>
+
+    <div class="bts-options">
+      <div class="bts-option active">
+        <div class="option-badge">✓ Mon option</div>
+        <h3>SISR</h3>
+        <p>Solutions d'Infrastructure, Systèmes et Réseaux.</p>
+        <ul>
+          <li>Administration Windows/Linux</li>
+          <li>Configuration réseaux</li>
+          <li>Sécurité informatique</li>
+          <li>Virtualisation & cloud</li>
+          <li>Support & maintenance</li>
+        </ul>
+      </div>
+      <div class="bts-option">
+        <div class="option-badge alt">Autre option</div>
+        <h3>SLAM</h3>
+        <p>Solutions Logicielles et Applications Métiers.</p>
+        <ul>
+          <li>Développement d'applications</li>
+          <li>Bases de données (MySQL, SQL)</li>
+          <li>Programmation (Python, etc.)</li>
+          <li>Gestion de projets</li>
+          <li>Tests & maintenance logicielle</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CERTIFICATIONS ══════════════════════ -->
+<section id="certifications" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">06 — Certifications</span>
+      <h2 class="section-title">Mes <em>certifications</em></h2>
+    </div>
+    <div class="cert-card">
+      <div class="cert-left">
+        <div class="cert-logo">ANSSI<span>SecNum</span></div>
+        <div class="cert-info">
+          <div class="cert-status">✓ Obtenu le 22 février 2026</div>
+          <h3>SecNumacadémie — MOOC ANSSI</h3>
+          <p>Certification officielle de l'Agence Nationale de la Sécurité des Systèmes d'Information, validant les 4 modules de cybersécurité.</p>
+          <a href="assets/docs/attestation_secnum.pdf" download class="cta-secondary" style="margin-top:1rem; display:inline-flex; font-size:.8rem;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Télécharger l'attestation
+          </a>
+        </div>
+      </div>
       <div class="cert-scores">
-        <div class="cert-score-item">
-          <span class="score-label">Panorama de la SSI</span>
-          <div class="score-bar-wrap"><div class="score-bar-fill" style="width:90%"></div></div>
+        <div class="score-row">
+          <span class="score-name">Panorama de la SSI</span>
+          <div class="score-bar"><div class="score-fill" style="width:90%"></div></div>
           <span class="score-val">90%</span>
         </div>
-        <div class="cert-score-item">
-          <span class="score-label">Sécurité de l'authentification</span>
-          <div class="score-bar-wrap"><div class="score-bar-fill" style="width:86%"></div></div>
+        <div class="score-row">
+          <span class="score-name">Sécurité de l'authentification</span>
+          <div class="score-bar"><div class="score-fill" style="width:86%"></div></div>
           <span class="score-val">86%</span>
         </div>
-        <div class="cert-score-item">
-          <span class="score-label">Sécurité sur Internet</span>
-          <div class="score-bar-wrap"><div class="score-bar-fill" style="width:90%"></div></div>
+        <div class="score-row">
+          <span class="score-name">Sécurité sur Internet</span>
+          <div class="score-bar"><div class="score-fill" style="width:90%"></div></div>
           <span class="score-val">90%</span>
         </div>
-        <div class="cert-score-item">
-          <span class="score-label">Sécurité du poste &amp; nomadisme</span>
-          <div class="score-bar-wrap"><div class="score-bar-fill" style="width:92%"></div></div>
+        <div class="score-row">
+          <span class="score-name">Sécurité du poste & nomadisme</span>
+          <div class="score-bar"><div class="score-fill" style="width:92%"></div></div>
           <span class="score-val">92%</span>
         </div>
       </div>
-      <a href="assets/docs/attestation_secnum.pdf" download class="btn btn-ghost" style="margin-top:1.5rem; font-size:.8rem; display:inline-flex;">📄 Télécharger l'attestation</a>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<section id="stage">
-  <p class="section-label">Stage</p>
-  <h2 class="section-title">Recherche de <span>stage</span></h2>
-  <div class="stage-box">
-    <div class="stage-details">
-      <h3 class="stage-title">En recherche<br>de <span>stage</span></h3>
-      <p>Je suis actuellement à la recherche d'un stage dans le cadre de ma formation en BTS SIO SISR, dans les domaines des réseaux, systèmes, cybersécurité ou de l'informatique en général.</p>
-    </div>
-    <div class="stage-meta">
-      <div class="meta-row"><span class="label">Type</span><span class="val">Stage obligatoire BTS SIO</span></div>
-      <div class="meta-row"><span class="label">Période</span><span class="val">25 mai → 3 juillet 2026</span></div>
-      <div class="meta-row"><span class="label">Durée</span><span class="val">6 semaines</span></div>
-      <div class="meta-row"><span class="label">Zone</span><span class="val">Île-de-France</span></div>
+<!-- ══════════════════════ STAGE ══════════════════════ -->
+<section id="stage" class="section">
+  <div class="container">
+    <div class="stage-banner">
+      <div class="stage-badge-wrap">
+        <div class="stage-badge-pulse"></div>
+        <div class="stage-badge">EN RECHERCHE</div>
+      </div>
+      <div class="stage-text">
+        <h2>Recherche de <em>stage</em></h2>
+        <p>Disponible pour un stage dans les domaines des réseaux, systèmes, cybersécurité ou de l'informatique en général.</p>
+      </div>
+      <div class="stage-meta">
+        <div class="stage-meta-item"><span>Type</span><strong>Stage BTS SIO SISR</strong></div>
+        <div class="stage-meta-item"><span>Période</span><strong>25 mai → 3 juillet 2026</strong></div>
+        <div class="stage-meta-item"><span>Durée</span><strong>6 semaines</strong></div>
+        <div class="stage-meta-item"><span>Zone</span><strong>Île-de-France</strong></div>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
+<!-- ══════════════════════ VEILLE ══════════════════════ -->
+<section id="veille" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">07 — Veille technologique</span>
+      <h2 class="section-title">Veille <em>techno</em></h2>
+      <p class="section-desc">Suivi des évolutions des moyens de transmission des données en informatique.</p>
+    </div>
 
-<section id="veille">
-  <p class="section-label">Veille technologique</p>
-  <h2 class="section-title">Veille <span>techno</span></h2>
-  <p style="color:var(--muted); max-width:700px; margin-bottom:2rem; line-height:1.8;">La veille technologique consiste à surveiller les évolutions, innovations et tendances dans un domaine informatique afin de rester informé des nouvelles technologies et des développements émergents.</p>
+    <!-- PEARLTREES EMBED -->
+    <div class="pearltrees-embed-wrap">
+      <div class="pearltrees-header">
+        <span class="pearltrees-logo">🌿 Pearltrees</span>
+        <span class="pearltrees-label">Ma veille organisée visuellement</span>
+      </div>
+      <div class="pearltrees-frame-container">
+        <iframe
+          src="https://www.pearltrees.com/bengalydombia/item706437993"
+          width="100%"
+          height="450"
+          frameborder="0"
+          allowfullscreen
+          style="border-radius:0 0 12px 12px;"
+          title="Veille technologique Bengaly Doumbia — Pearltrees"
+        ></iframe>
+      </div>
+      <p class="pearltrees-note">Si l'intégration ne s'affiche pas, <a href="https://www.pearltrees.com/bengalydombia" target="_blank" rel="noopener">accédez à mon Pearltrees directement ↗</a></p>
+    </div>
 
-  <div class="veille-tabs">
-    <button class="vtab active" data-tab="intro">01 — Introduction</button>
-    <button class="vtab" data-tab="methodo">02 — Méthodologie</button>
-    <button class="vtab" data-tab="tendances">03 — Tendances</button>
-    <button class="vtab" data-tab="articles">04 — Articles</button>
-    <button class="vtab" data-tab="conclusion">05 — Conclusion</button>
-  </div>
+    <div class="veille-tabs">
+      <button class="vtab active" data-tab="intro">01 — Introduction</button>
+      <button class="vtab" data-tab="methodo">02 — Méthodologie</button>
+      <button class="vtab" data-tab="tendances">03 — Tendances</button>
+      <button class="vtab" data-tab="articles">04 — Articles</button>
+      <button class="vtab" data-tab="conclusion">05 — Conclusion</button>
+    </div>
 
-  <!-- 01 INTRODUCTION -->
-  <div id="veille-intro" class="veille-panel active">
-    <div class="veille-content-box">
-      <div class="veille-section-header">
+    <div id="veille-intro" class="veille-panel active">
+      <div class="veille-box">
         <span class="veille-num">01</span>
         <h3>Introduction</h3>
-      </div>
-      <p class="veille-text">La veille technologique consiste à surveiller les évolutions, innovations et tendances dans un domaine informatique afin de rester informé des nouvelles technologies et des développements émergents.</p>
-      <p class="veille-text">Dans le cadre de mon BTS SIO option SISR, j'ai choisi comme sujet de veille : <strong class="veille-accent">les moyens de transmission des données en informatique et leurs évolutions.</strong></p>
-      <p class="veille-text">La transmission des données est au cœur de toute infrastructure informatique. Des câbles Ethernet aux réseaux sans fil, de la fibre optique aux satellites en orbite basse, les technologies de transmission n'ont cessé d'évoluer pour répondre aux besoins croissants en débit, fiabilité et couverture géographique.</p>
-      <div class="veille-objectives">
-        <div class="veille-obj-item"><span class="obj-icon">📶</span><span>Comprendre les différents supports de transmission (filaire, sans fil, satellite)</span></div>
-        <div class="veille-obj-item"><span class="obj-icon">📈</span><span>Identifier les évolutions récentes et les tendances à venir (Wi-Fi 7, 6G, LEO)</span></div>
-        <div class="veille-obj-item"><span class="obj-icon">🔍</span><span>Analyser les enjeux : débit, latence, couverture, consommation énergétique</span></div>
-        <div class="veille-obj-item"><span class="obj-icon">🌍</span><span>Évaluer l'impact sur la fracture numérique et la connectivité mondiale</span></div>
+        <p>Dans le cadre de mon BTS SIO option SISR, j'ai choisi comme sujet de veille : <strong>les moyens de transmission des données en informatique et leurs évolutions.</strong></p>
+        <p>La transmission des données est au cœur de toute infrastructure informatique. Des câbles Ethernet aux réseaux sans fil, de la fibre optique aux satellites en orbite basse, les technologies de transmission n'ont cessé d'évoluer.</p>
+        <div class="veille-objectives">
+          <div class="veille-obj">📶 Comprendre les différents supports de transmission (filaire, sans fil, satellite)</div>
+          <div class="veille-obj">📈 Identifier les évolutions récentes (Wi-Fi 7, 6G, satellites LEO)</div>
+          <div class="veille-obj">🔍 Analyser les enjeux : débit, latence, couverture, énergie</div>
+          <div class="veille-obj">🌍 Évaluer l'impact sur la fracture numérique mondiale</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- 02 MÉTHODOLOGIE -->
-  <div id="veille-methodo" class="veille-panel">
-    <div class="veille-content-box">
-      <div class="veille-section-header">
+    <div id="veille-methodo" class="veille-panel">
+      <div class="veille-box">
         <span class="veille-num">02</span>
-        <h3>Méthodologie &amp; Outils de veille</h3>
-      </div>
-      <p class="veille-text">Ma veille repose sur une méthodologie structurée en trois étapes : la <strong>collecte</strong> d'informations, <strong>l'analyse</strong> et le tri des contenus, puis le <strong>partage</strong> et la mise en application des connaissances acquises.</p>
-      <p class="veille-text">J'utilise principalement un agrégateur de <strong>flux RSS</strong> pour centraliser mes sources, complété par des <strong>alertes automatiques</strong> et la consultation régulière de <strong>sites spécialisés</strong>.</p>
-      <div class="veille-tools-grid">
-        <a href="https://feedly.com/" target="_blank" class="veille-tool-card">
-          <div class="tool-icon">📰</div>
-          <div><strong>Feedly</strong><p>Agrégateur de flux RSS — centralisation de toutes mes sources en un seul endroit</p></div>
-        </a>
-        <a href="https://www.google.fr/alerts" target="_blank" class="veille-tool-card">
-          <div class="tool-icon">🔔</div>
-          <div><strong>Google Alerts</strong><p>Alertes automatiques sur les mots-clés "transmission données", "fibre optique", "Wi-Fi 7", "5G", "6G"</p></div>
-        </a>
-        <a href="https://www.pearltrees.com/" target="_blank" class="veille-tool-card">
-          <div class="tool-icon">🌿</div>
-          <div><strong>Pearltrees</strong><p>Organisation visuelle de ma veille — sources, articles et ressources centralisées</p></div>
-        </a>
-        <a href="https://www.arcep.fr/" target="_blank" class="veille-tool-card">
-          <div class="tool-icon">🏛️</div>
-          <div><strong>ARCEP</strong><p>Régulateur français des télécoms — rapports officiels sur le déploiement des réseaux en France</p></div>
-        </a>
-        <a href="https://www.lemagit.fr/" target="_blank" class="veille-tool-card">
-          <div class="tool-icon">💻</div>
-          <div><strong>LeMagIT</strong><p>Actualités réseaux et infrastructures IT — analyses techniques approfondies</p></div>
-        </a>
-        <a href="https://www.oecd.org/" target="_blank" class="veille-tool-card">
-          <div class="tool-icon">📊</div>
-          <div><strong>OCDE</strong><p>Données et rapports sur la connectivité mondiale, la 5G et l'évolution des abonnements haut débit</p></div>
-        </a>
+        <h3>Méthodologie & Outils</h3>
+        <p>Ma veille repose sur une méthodologie en trois étapes : <strong>collecte</strong>, <strong>analyse</strong> et <strong>partage</strong>. J'utilise un agrégateur RSS complété par des alertes automatiques.</p>
+        <div class="tools-grid">
+          <a href="https://feedly.com/" target="_blank" class="tool-card">📰 <div><strong>Feedly</strong><p>Agrégateur RSS central</p></div></a>
+          <a href="https://www.google.fr/alerts" target="_blank" class="tool-card">🔔 <div><strong>Google Alerts</strong><p>Alertes Wi-Fi 7, 5G, 6G...</p></div></a>
+          <a href="https://www.pearltrees.com/" target="_blank" class="tool-card">🌿 <div><strong>Pearltrees</strong><p>Organisation visuelle</p></div></a>
+          <a href="https://www.arcep.fr/" target="_blank" class="tool-card">🏛️ <div><strong>ARCEP</strong><p>Régulateur télécoms FR</p></div></a>
+          <a href="https://www.lemagit.fr/" target="_blank" class="tool-card">💻 <div><strong>LeMagIT</strong><p>Actualités réseaux IT</p></div></a>
+          <a href="https://www.oecd.org/" target="_blank" class="tool-card">📊 <div><strong>OCDE</strong><p>Données connectivité mondiale</p></div></a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- 03 TENDANCES -->
-  <div id="veille-tendances" class="veille-panel">
-    <div class="veille-content-box">
-      <div class="veille-section-header">
+    <div id="veille-tendances" class="veille-panel">
+      <div class="veille-box">
         <span class="veille-num">03</span>
         <h3>Tendances technologiques</h3>
-      </div>
-      <p class="veille-text">Les moyens de transmission des données connaissent des évolutions majeures, portées par des besoins croissants en débit et connectivité. Voici les principales tendances identifiées lors de ma veille :</p>
-      <div class="veille-tendances-grid">
-        <div class="tendance-card">
-          <div class="tendance-icon">🔵</div>
-          <div>
-            <h4>Fibre optique : vers des débits multi-térabit</h4>
-            <p>La fibre optique reste le support dominant pour les infrastructures fixes. En 2025, NTT a établi un record mondial en atteignant <strong>455 Tbit/s</strong> sur 53,5 km grâce à des techniques de multiplexage avancées. La technologie FTTR (Fiber To The Room) émerge comme la suite logique du FTTH, déployant la fibre jusqu'à chaque pièce d'un bâtiment.</p>
-          </div>
-        </div>
-        <div class="tendance-card">
-          <div class="tendance-icon">📶</div>
-          <div>
-            <h4>5G &amp; future 6G : le sans-fil à grande vitesse</h4>
-            <p>Les abonnements 5G ont bondi de <strong>48 %</strong> en un an dans les pays de l'OCDE, représentant désormais 33 % du total des abonnements mobiles. La 5G SA (Stand Alone) offre des performances bien supérieures à la 5G NSA. La recherche sur la <strong>6G</strong> est déjà en cours, avec des promesses de débits dépassant le Tbit/s et des latences inférieures à la milliseconde.</p>
-          </div>
-        </div>
-        <div class="tendance-card">
-          <div class="tendance-icon">🛰️</div>
-          <div>
-            <h4>Internet par satellite LEO : Starlink et la connectivité universelle</h4>
-            <p>Les constellations de satellites en orbite basse (LEO) révolutionnent l'accès à Internet dans les zones sans fibre. Starlink dépasse désormais <strong>8 millions d'abonnés</strong> dans plus de 150 pays avec plus de 7 000 satellites actifs. La latence réduite (~40 ms) rend enfin possible le streaming, les jeux en ligne et la visioconférence par satellite.</p>
-          </div>
-        </div>
-        <div class="tendance-card">
-          <div class="tendance-icon">📡</div>
-          <div>
-            <h4>Wi-Fi 7 : la révolution du sans-fil local</h4>
-            <p>Le Wi-Fi 7 (802.11be) apporte des débits théoriques jusqu'à <strong>46 Gbit/s</strong>, le Multi-Link Operation (MLO) permettant d'utiliser simultanément plusieurs bandes de fréquences. Cette technologie est particulièrement adaptée aux environnements denses (entreprises, stades, hôpitaux) et prépare l'infrastructure locale à absorber les débits de la fibre multi-gigabit.</p>
-          </div>
-        </div>
-        <div class="tendance-card">
-          <div class="tendance-icon">🔗</div>
-          <div>
-            <h4>Convergence filaire / sans-fil / satellitaire</h4>
-            <p>L'avenir ne repose pas sur une technologie unique, mais sur la <strong>coexistence intelligente</strong> de plusieurs supports. La fibre assure le backhaul, la 5G/Wi-Fi la distribution locale, et le satellite comble les zones blanches. Starlink explore déjà l'intégration avec les réseaux 5G terrestres pour un basculement transparent entre les supports.</p>
-          </div>
-        </div>
-        <div class="tendance-card">
-          <div class="tendance-icon">🌱</div>
-          <div>
-            <h4>Enjeux : fracture numérique &amp; sobriété énergétique</h4>
-            <p>Malgré les progrès, près d'<strong>un quart de l'humanité</strong> n'a toujours pas accès à Internet dans de bonnes conditions (UIT, 2025). Par ailleurs, la multiplication des infrastructures réseau soulève des questions de consommation énergétique, poussant les opérateurs à développer des équipements plus sobres et à optimiser leurs déploiements.</p>
-          </div>
+        <div class="tendances-list">
+          <div class="tendance"><span class="t-icon">🔵</span><div><h4>Fibre optique : vers des débits multi-térabit</h4><p>NTT a établi un record de 455 Tbit/s sur 53,5 km. La technologie FTTR émerge comme suite logique du FTTH.</p></div></div>
+          <div class="tendance"><span class="t-icon">📶</span><div><h4>5G & future 6G</h4><p>Abonnements 5G en hausse de 48 % en un an dans les pays de l'OCDE. La 6G promet des débits dépassant le Tbit/s.</p></div></div>
+          <div class="tendance"><span class="t-icon">🛰️</span><div><h4>Starlink & satellites LEO</h4><p>Plus de 8 millions d'abonnés dans 150 pays. Latence réduite (~40 ms), permettant streaming et visioconférence par satellite.</p></div></div>
+          <div class="tendance"><span class="t-icon">📡</span><div><h4>Wi-Fi 7 (802.11be)</h4><p>Débits théoriques jusqu'à 46 Gbit/s, Multi-Link Operation (MLO). Idéal pour les environnements denses.</p></div></div>
+          <div class="tendance"><span class="t-icon">🔗</span><div><h4>Convergence filaire / sans-fil / satellite</h4><p>L'avenir repose sur la coexistence intelligente : fibre (backhaul), 5G/Wi-Fi (local), satellite (zones blanches).</p></div></div>
+          <div class="tendance"><span class="t-icon">🌱</span><div><h4>Fracture numérique & sobriété</h4><p>Un quart de l'humanité reste sans accès Internet de qualité. La sobriété énergétique des équipements devient un enjeu majeur.</p></div></div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- 04 ARTICLES -->
-  <div id="veille-articles" class="veille-panel">
-    <div class="veille-content-box">
-      <div class="veille-section-header">
+    <div id="veille-articles" class="veille-panel">
+      <div class="veille-box">
         <span class="veille-num">04</span>
-        <h3>Articles récents</h3>
-      </div>
-      <p class="veille-text" style="margin-bottom:1.5rem;"><em>Dernière mise à jour : mai 2026</em></p>
-      <div class="veille-articles-list">
-
-        <div class="article-card">
-          <div class="article-meta">
-            <span class="article-source">LeMagIT</span>
-            <span class="article-date">Janvier 2025</span>
+        <h3>Articles récents <small>— Dernière mise à jour : mai 2026</small></h3>
+        <div class="articles-grid">
+          <div class="article-card">
+            <div class="article-meta"><span class="article-src">LeMagIT</span><span>Jan. 2025</span></div>
+            <h4>NTT établit un record mondial de transmission par fibre optique</h4>
+            <p>455 Tbit/s sur 53,5 km grâce à une technique s'inspirant du MIMO utilisé en Wi-Fi et 5G.</p>
+            <a href="https://www.lemagit.fr/actualites/366617719/Reseau-NTT-revendique-le-record-mondial-de-transmission-par-fibre-optique" target="_blank">Lire l'article →</a>
           </div>
-          <h4 class="article-title">NTT établit un record mondial de transmission par fibre optique</h4>
-          <p class="article-desc">L'opérateur japonais NTT a réussi à transmettre des données à 455 Tbit/s sur 53,5 km, soit 50 fois mieux que les systèmes traditionnels, grâce à une technique s'inspirant du MIMO utilisé en Wi-Fi et 5G.</p>
-          <a href="https://www.lemagit.fr/actualites/366617719/Reseau-NTT-revendique-le-record-mondial-de-transmission-par-fibre-optique" target="_blank" class="article-link">Lire l'article →</a>
-        </div>
-
-        <div class="article-card">
-          <div class="article-meta">
-            <span class="article-source">OCDE</span>
-            <span class="article-date">Mai 2025</span>
+          <div class="article-card">
+            <div class="article-meta"><span class="article-src">OCDE</span><span>Mai 2025</span></div>
+            <h4>La 5G et la fibre optique continuent d'étendre leur empreinte mondiale</h4>
+            <p>+48 % d'abonnements 5G en un an. Consommation data mobile passée de 8 Go à 17 Go/mois.</p>
+            <a href="https://www.oecd.org/fr/data/insights/statistical-releases/2025/05/fibre-and-5g-continue-to-expand-their-footprint-while-fixed-wireless-access-gains-ground-in-oecd-countries.html" target="_blank">Lire l'article →</a>
           </div>
-          <h4 class="article-title">La 5G et la fibre optique continuent d'étendre leur empreinte mondiale</h4>
-          <p class="article-desc">Les abonnements 5G ont augmenté de 48 % en un an et représentent désormais 33 % du total des abonnements mobiles dans les pays de l'OCDE. La consommation de données mobiles a plus que doublé en deux ans, passant de 8 Go à 17 Go par mois en moyenne.</p>
-          <a href="https://www.oecd.org/fr/data/insights/statistical-releases/2025/05/fibre-and-5g-continue-to-expand-their-footprint-while-fixed-wireless-access-gains-ground-in-oecd-countries.html" target="_blank" class="article-link">Lire l'article →</a>
-        </div>
-
-        <div class="article-card">
-          <div class="article-meta">
-            <span class="article-source">ChannelBiz</span>
-            <span class="article-date">Avril 2025</span>
+          <div class="article-card">
+            <div class="article-meta"><span class="article-src">ChannelBiz</span><span>Avr. 2025</span></div>
+            <h4>Wi-Fi 7, 5G, fibre, Starlink : les technologies réseau d'avenir</h4>
+            <p>Tour d'horizon des technologies de transmission 2025 et la tendance vers la coexistence intelligente à l'horizon 2030.</p>
+            <a href="https://www.channelbiz.fr/brandvoice/wifi-7-5g-fibre-starlink-quelles-sont-les-technologies-reseau-davenir/" target="_blank">Lire l'article →</a>
           </div>
-          <h4 class="article-title">Wi-Fi 7, 5G, fibre, Starlink : quelles sont les technologies réseau d'avenir ?</h4>
-          <p class="article-desc">Un tour d'horizon complet des technologies de transmission en 2025 : les différences entre backhaul et distribution locale, les limites de chaque technologie, et la tendance vers la coexistence intelligente fibre/5G/satellite pour les entreprises à l'horizon 2030.</p>
-          <a href="https://www.channelbiz.fr/brandvoice/wifi-7-5g-fibre-starlink-quelles-sont-les-technologies-reseau-davenir/" target="_blank" class="article-link">Lire l'article →</a>
-        </div>
-
-        <div class="article-card">
-          <div class="article-meta">
-            <span class="article-source">Selectra</span>
-            <span class="article-date">Mai 2026</span>
+          <div class="article-card">
+            <div class="article-meta"><span class="article-src">Selectra</span><span>Mai 2026</span></div>
+            <h4>Starlink : la constellation qui redéfinit les télécoms mondiales</h4>
+            <p>Plus de 11 000 satellites lancés, 8 millions d'abonnés dans 150 pays. Latence drastiquement réduite.</p>
+            <a href="https://selectra.info/telecom/actualites/marche/starlink-internet-par-satellite-revolution-telecoms-mondiale" target="_blank">Lire l'article →</a>
           </div>
-          <h4 class="article-title">Starlink : la constellation qui redéfinit les infrastructures télécoms mondiales</h4>
-          <p class="article-desc">En 2026, Starlink compte plus de 11 000 satellites lancés et dépasse 8 millions d'abonnés dans 150 pays. La constellation en orbite basse réduit drastiquement la latence par rapport aux satellites géostationnaires, ouvrant l'accès Internet aux zones les plus reculées de la planète.</p>
-          <a href="https://selectra.info/telecom/actualites/marche/starlink-internet-par-satellite-revolution-telecoms-mondiale" target="_blank" class="article-link">Lire l'article →</a>
-        </div>
-
-        <div class="article-card">
-          <div class="article-meta">
-            <span class="article-source">Distri-Fibre</span>
-            <span class="article-date">Mars 2025</span>
+          <div class="article-card">
+            <div class="article-meta"><span class="article-src">Distri-Fibre</span><span>Mars 2025</span></div>
+            <h4>Les tendances 2025 de la fibre optique</h4>
+            <p>Déploiement rural accéléré, fibre multi-cœur Tbit/s, FTTR et intégration croissante avec la 5G.</p>
+            <a href="https://distri-fibre.com/blogs/infos/les-tendances-2025-de-la-fibre-optique-innovations-et-nouvelles-technologies" target="_blank">Lire l'article →</a>
           </div>
-          <h4 class="article-title">Les tendances 2025 de la fibre optique : innovations et nouvelles technologies</h4>
-          <p class="article-desc">Analyse des grandes tendances de la fibre optique en 2025 : déploiement rural accéléré, fibre multi-cœur atteignant plusieurs Tbit/s, émergence du FTTR (Fiber To The Room), et intégration croissante avec les infrastructures 5G pour les villes intelligentes.</p>
-          <a href="https://distri-fibre.com/blogs/infos/les-tendances-2025-de-la-fibre-optique-innovations-et-nouvelles-technologies" target="_blank" class="article-link">Lire l'article →</a>
-        </div>
-
-        <div class="article-card">
-          <div class="article-meta">
-            <span class="article-source">Futura Sciences</span>
-            <span class="article-date">Février 2026</span>
+          <div class="article-card">
+            <div class="article-meta"><span class="article-src">Futura Sciences</span><span>Fév. 2026</span></div>
+            <h4>Plus fort que Starlink : l'internet stratosphérique</h4>
+            <p>Les relais HAPS à 20 km d'altitude pourraient connecter les zones encore sans couverture.</p>
+            <a href="https://www.futura-sciences.com/tech/actualites/internet-plus-fort-starlink-internet-stratospherique-pourrait-etendre-connectivite-toute-planete-130801/" target="_blank">Lire l'article →</a>
           </div>
-          <h4 class="article-title">Plus fort que Starlink : l'internet stratosphérique pour connecter toute la planète</h4>
-          <p class="article-desc">Malgré les 10 000 satellites de Starlink et les 650 de OneWeb, un quart de l'humanité reste sans accès Internet de qualité. Une nouvelle piste émerge : les relais stratosphériques (HAPS), positionnés à 20 km d'altitude, capables de couvrir des zones entières à moindre coût.</p>
-          <a href="https://www.futura-sciences.com/tech/actualites/internet-plus-fort-starlink-internet-stratospherique-pourrait-etendre-connectivite-toute-planete-130801/" target="_blank" class="article-link">Lire l'article →</a>
         </div>
-
       </div>
     </div>
-  </div>
 
-  <!-- 05 CONCLUSION -->
-  <div id="veille-conclusion" class="veille-panel">
-    <div class="veille-content-box">
-      <div class="veille-section-header">
+    <div id="veille-conclusion" class="veille-panel">
+      <div class="veille-box">
         <span class="veille-num">05</span>
         <h3>Conclusion</h3>
-      </div>
-      <p class="veille-text">Cette veille sur les <strong>moyens de transmission des données en informatique et leurs évolutions</strong> met en lumière une transformation profonde et continue des infrastructures réseau à l'échelle mondiale.</p>
-      <p class="veille-text">Trois grandes dynamiques structurent ce paysage en mutation :</p>
-      <div class="veille-conclusion-points">
-        <div class="ccl-point">
-          <span class="ccl-icon">⚡</span>
-          <div><strong>La course aux débits</strong><p>La fibre optique repousse sans cesse ses limites (455 Tbit/s en laboratoire), tandis que le Wi-Fi 7 et la 5G SA apportent la très haute performance au sans-fil. Les usages toujours plus gourmands (streaming 8K, cloud gaming, IoT massif) tirent l'ensemble vers le haut.</p></div>
+        <p>Cette veille met en lumière une transformation profonde des infrastructures réseau mondiales, structurée autour de trois grandes dynamiques :</p>
+        <div class="conclusion-points">
+          <div class="ccl-pt"><span>⚡</span><div><strong>La course aux débits</strong><p>La fibre optique repousse ses limites (455 Tbit/s), le Wi-Fi 7 et la 5G SA apportent la très haute performance au sans-fil.</p></div></div>
+          <div class="ccl-pt"><span>🌐</span><div><strong>La quête de la couverture universelle</strong><p>Les constellations LEO changent la donne mais un quart de la population reste sous-connectée. Les solutions hybrides semblent la voie la plus prometteuse.</p></div></div>
+          <div class="ccl-pt"><span>🔋</span><div><strong>Les défis de durabilité</strong><p>La multiplication des antennes 5G et satellites soulève des questions sur la consommation énergétique et les débris spatiaux.</p></div></div>
         </div>
-        <div class="ccl-point">
-          <span class="ccl-icon">🌐</span>
-          <div><strong>La quête de la couverture universelle</strong><p>Les constellations de satellites LEO comme Starlink changent la donne pour les zones sans fibre, mais un quart de la population mondiale reste encore sous-connectée. Les solutions hybrides (fibre + 5G + satellite) semblent être la voie la plus prometteuse pour réduire la fracture numérique.</p></div>
-        </div>
-        <div class="ccl-point">
-          <span class="ccl-icon">🔋</span>
-          <div><strong>Les défis de durabilité</strong><p>La multiplication des antennes 5G, des satellites et des équipements réseaux soulève des questions sur la consommation énergétique et les débris spatiaux. La sobriété numérique devient un critère important dans l'évolution des technologies de transmission.</p></div>
-        </div>
-      </div>
-      <p class="veille-text" style="margin-top:1.5rem;">En lien direct avec ma formation <strong>BTS SIO SISR</strong>, cette veille me permet de mieux comprendre les infrastructures sur lesquelles reposent les réseaux que j'apprends à administrer et sécuriser. Elle est <strong>mise à jour régulièrement</strong> pour suivre l'évolution rapide de ce domaine.</p>
-    </div>
-  </div>
-
-</section>
-
-<div class="divider"></div>
-
-<!-- CONTACT AVEC FORMULAIRE -->
-<section id="contact">
-  <p class="section-label">Contact</p>
-  <h2 class="section-title">Me <span>contacter</span></h2>
-  <p style="color:var(--muted);margin-bottom:2.5rem;">N'hésitez pas à me contacter pour toute proposition de stage ou question.</p>
-  <div class="contact-layout">
-    <div class="contact-info-col">
-      <div class="contact-info-item">
-        <div class="ci-icon">📞</div>
-        <div><div class="ci-label">Téléphone</div><a href="tel:0783213736" class="ci-val">0783213736</a></div>
-      </div>
-      <div class="contact-info-item">
-        <div class="ci-icon">✉️</div>
-        <div><div class="ci-label">Email</div><a href="mailto:doumbiabengaly78@gmail.com" class="ci-val">doumbiabengaly78@gmail.com</a></div>
-      </div>
-      <div class="contact-info-item">
-        <div class="ci-icon">📍</div>
-        <div><div class="ci-label">Adresse</div><span class="ci-val">Élancourt, Yvelines, France</span></div>
-      </div>
-      <div style="margin-top:2rem;">
-        <a href="assets/docs/CV_Bengaly_Doumbia.pdf" download class="btn btn-primary" style="font-size:.8rem;">📄 Télécharger mon CV</a>
-      </div>
-    </div>
-    <div class="contact-form-col">
-      <div id="form-success" class="form-success" style="display:none;">✅ Merci ! Votre message a bien été envoyé.</div>
-      <div id="contact-form-wrap">
-        <div class="form-row">
-          <div class="form-group"><label for="contact-nom">Nom</label><input type="text" id="contact-nom" placeholder="Votre nom" /></div>
-          <div class="form-group"><label for="contact-prenom">Prénom</label><input type="text" id="contact-prenom" placeholder="Votre prénom" /></div>
-        </div>
-        <div class="form-group"><label for="contact-email">Email</label><input type="email" id="contact-email" placeholder="votre@email.com" /></div>
-        <div class="form-group"><label for="contact-sujet">Sujet</label><input type="text" id="contact-sujet" placeholder="Sujet de votre message" /></div>
-        <div class="form-group"><label for="contact-message">Message</label><textarea id="contact-message" rows="5" placeholder="Écrivez votre message ici..."></textarea></div>
-        <button class="btn btn-primary" id="contact-send-btn" style="width:100%;justify-content:center;margin-top:.5rem;" onclick="sendContactMessage()">Envoyer un message ➤</button>
+        <p style="margin-top:1.5rem; color:var(--muted);">En lien direct avec ma formation <strong>BTS SIO SISR</strong>, cette veille me permet de mieux comprendre les infrastructures sur lesquelles reposent les réseaux que j'apprends à administrer et sécuriser.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ══════════════════════ CONTACT ══════════════════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">08 — Contact</span>
+      <h2 class="section-title">Me <em>contacter</em></h2>
+      <p class="section-desc">N'hésitez pas à me contacter pour toute proposition de stage ou question.</p>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div><div class="contact-label">Téléphone</div><a href="tel:0783213736" class="contact-val">0783213736</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div><div class="contact-label">Email</div><a href="mailto:doumbiabengaly78@gmail.com" class="contact-val">doumbiabengaly78@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div><div class="contact-label">Adresse</div><span class="contact-val">Élancourt, Yvelines, France</span></div>
+        </div>
+        <a href="assets/docs/CV_Bengaly_Doumbia.pdf" download class="cta-primary" style="margin-top:1.5rem; display:inline-flex;">📄 Télécharger mon CV</a>
+      </div>
+      <div class="contact-form">
+        <div id="form-success" style="display:none; background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.3); border-radius:12px; padding:1.5rem; text-align:center; color:#22c55e; font-weight:600;">✅ Merci ! Votre message a bien été envoyé.</div>
+        <div id="form-body">
+          <div class="form-row">
+            <div class="form-group"><label>Nom</label><input type="text" id="c-nom" placeholder="Votre nom" /></div>
+            <div class="form-group"><label>Prénom</label><input type="text" id="c-prenom" placeholder="Votre prénom" /></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" id="c-email" placeholder="votre@email.com" /></div>
+          <div class="form-group"><label>Sujet</label><input type="text" id="c-sujet" placeholder="Sujet de votre message" /></div>
+          <div class="form-group"><label>Message</label><textarea id="c-message" rows="5" placeholder="Écrivez votre message ici..."></textarea></div>
+          <button class="cta-primary" id="send-btn" onclick="sendMsg()" style="width:100%; justify-content:center; margin-top:.5rem;">Envoyer un message ➤</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
 <footer>
-  <p>© DOUMBIA BENGALY — Portfolio BTS SIO 2025-2026</p>
-  <p style="margin-top:.5rem; font-size:.65rem;">Lycée Jean Vilar, Plaisir · Élancourt, Île-de-France</p>
+  <div class="footer-inner">
+    <div class="footer-logo">B.DOUMBIA</div>
+    <p class="footer-copy">© 2025–2026 · Portfolio BTS SIO SISR</p>
+    <p class="footer-school">Lycée Jean Vilar, Plaisir · Élancourt, Île-de-France</p>
+  </div>
 </footer>
 
 <script src="assets/js/main.js"></script>
 <script>
-function sendContactMessage() {
-  const nom = document.getElementById('contact-nom').value.trim();
-  const prenom = document.getElementById('contact-prenom').value.trim();
-  const email = document.getElementById('contact-email').value.trim();
-  const sujet = document.getElementById('contact-sujet').value.trim();
-  const message = document.getElementById('contact-message').value.trim();
-  if (!nom || !email || !message) {
-    alert('Veuillez remplir au moins votre nom, email et message.');
-    return;
-  }
-  const btn = document.getElementById('contact-send-btn');
-  btn.textContent = 'Envoi en cours...';
-  btn.disabled = true;
-  const body = 'Nom : ' + nom + ' ' + prenom + '\nEmail : ' + email + '\n\n' + message;
-  window.location.href = 'mailto:doumbiabengaly78@gmail.com?subject=' + encodeURIComponent(sujet || 'Contact depuis portfolio') + '&body=' + encodeURIComponent(body);
-  setTimeout(function() {
-    document.getElementById('contact-form-wrap').style.display = 'none';
+function sendMsg() {
+  const nom = document.getElementById('c-nom').value.trim();
+  const prenom = document.getElementById('c-prenom').value.trim();
+  const email = document.getElementById('c-email').value.trim();
+  const sujet = document.getElementById('c-sujet').value.trim();
+  const message = document.getElementById('c-message').value.trim();
+  if (!nom || !email || !message) { alert('Veuillez remplir au moins votre nom, email et message.'); return; }
+  const btn = document.getElementById('send-btn');
+  btn.textContent = 'Envoi...'; btn.disabled = true;
+  window.location.href = 'mailto:doumbiabengaly78@gmail.com?subject=' + encodeURIComponent(sujet || 'Contact portfolio') + '&body=' + encodeURIComponent('Nom : ' + nom + ' ' + prenom + '\nEmail : ' + email + '\n\n' + message);
+  setTimeout(() => {
+    document.getElementById('form-body').style.display = 'none';
     document.getElementById('form-success').style.display = 'block';
   }, 800);
 }

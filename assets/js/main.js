@@ -1,5 +1,5 @@
 /* ============================================================
-   PORTFOLIO BENGALY DOUMBIA — main.js
+   PORTFOLIO BENGALY DOUMBIA — main.js (Redesign 2026)
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,12 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   applyTheme(saved || 'dark');
-
   toggle.addEventListener('click', () => {
     const isLight = document.body.classList.toggle('light');
-    const theme = isLight ? 'light' : 'dark';
     icon.textContent = isLight ? '🌙' : '☀️';
-    localStorage.setItem('theme', theme);
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+
+
+  /* ─── HAMBURGER MENU ─── */
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  // Close on link click
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 
 
@@ -34,12 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(e => {
       if (e.isIntersecting) {
         e.target.classList.add('visible');
+        // Stagger children if they have reveal class
+        const children = e.target.querySelectorAll('.reveal-child');
+        children.forEach((child, i) => {
+          setTimeout(() => child.classList.add('visible'), i * 100);
+        });
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08 });
 
   document.querySelectorAll(
-    'section, .skill-card, .exp-card, .tl-item, .stat-card, .bts-card, .contact-card, .veille-placeholder, .stage-box'
+    'section, .skill-card, .tl-item, .stat-block, .bts-option, .bts-domain, .article-card, .projet-card, .cert-card, .tendance, .ccl-pt, .stage-banner, .veille-obj'
   ).forEach(el => {
     el.classList.add('reveal');
     observer.observe(el);
@@ -47,45 +62,84 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ─── ACTIVE NAV LINK ─── */
-  const sections = document.querySelectorAll('section[id], #home');
-  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const sections = document.querySelectorAll('section[id]');
+  const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
 
   const navObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
         const id = e.target.id;
-        navLinks.forEach(a => {
+        navAnchors.forEach(a => {
           a.classList.toggle('active', a.getAttribute('href') === '#' + id);
         });
       }
     });
-  }, { threshold: 0.4 });
+  }, { threshold: 0.35 });
 
   sections.forEach(s => navObserver.observe(s));
 
 
-  /* ─── VEILLE TECHNO TABS ─── */
-  const tabs   = document.querySelectorAll('.vtab');
-  const panels = document.querySelectorAll('.veille-panel');
+  /* ─── PROJET ACCORDION ─── */
+  document.querySelectorAll('.projet-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const targetId = btn.dataset.target;
+      const body = document.getElementById(targetId);
+      const icon = btn.querySelector('.toggle-icon');
+      const isOpen = body.classList.contains('open');
 
-  tabs.forEach(tab => {
+      // Close all
+      document.querySelectorAll('.projet-body').forEach(b => b.classList.remove('open'));
+      document.querySelectorAll('.projet-toggle').forEach(t => {
+        t.classList.remove('open');
+        t.querySelector('.toggle-icon').textContent = '+';
+        t.setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        body.classList.add('open');
+        btn.classList.add('open');
+        icon.textContent = '−';
+        btn.setAttribute('aria-expanded', 'true');
+        // Smooth scroll to project
+        setTimeout(() => {
+          body.closest('.projet-card').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      }
+    });
+
+    // Allow clicking the header too
+    const header = btn.closest('.projet-header');
+    if (header) {
+      header.addEventListener('click', (e) => {
+        if (!e.target.closest('.projet-toggle')) btn.click();
+      });
+      header.style.cursor = 'pointer';
+    }
+  });
+
+
+  /* ─── VEILLE TABS ─── */
+  document.querySelectorAll('.vtab').forEach(tab => {
     tab.addEventListener('click', () => {
       const target = tab.dataset.tab;
-      tabs.forEach(t => t.classList.remove('active'));
-      panels.forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.vtab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.veille-panel').forEach(p => p.classList.remove('active'));
       tab.classList.add('active');
-      document.getElementById('veille-' + target)?.classList.add('active');
+      const panel = document.getElementById('veille-' + target);
+      if (panel) panel.classList.add('active');
     });
   });
 
 
-  /* ─── SMOOTH HERO PARALLAX ─── */
+  /* ─── NAVBAR SCROLL EFFECT ─── */
+  const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    const bg = document.querySelector('.hero-bg');
-    const grid = document.querySelector('.grid-lines');
-    if (bg)   bg.style.transform   = `translateY(${y * 0.25}px)`;
-    if (grid) grid.style.transform = `translateY(${y * 0.1}px)`;
+    if (window.scrollY > 80) {
+      navbar.style.borderBottomColor = 'rgba(249,115,22,0.15)';
+    } else {
+      navbar.style.borderBottomColor = '';
+    }
   }, { passive: true });
 
 });
