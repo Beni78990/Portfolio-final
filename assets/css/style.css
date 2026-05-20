@@ -687,3 +687,62 @@ footer {
   padding: .5rem 1rem;
 }
 
+
+/* ─── STAR RATING ─── */
+.star-rating {
+  display: flex; gap: 2px; align-items: center; flex: 1;
+}
+.star-rating::before { content: ''; }
+.star {
+  width: 14px; height: 14px; flex-shrink: 0;
+}
+.star-full { color: var(--accent); }
+.star-half { color: var(--accent); opacity: .6; }
+.star-empty { color: var(--border); opacity: .5; }
+.score-pass { color: #22c55e; font-weight: 600; font-size: .75rem; }
+
+/* ─── SVG ICON REPLACEMENTS ─── */
+.info-icon-svg {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; flex-shrink: 0;
+  color: var(--accent);
+}
+.contact-icon-svg {
+  width: 38px; height: 38px; border-radius: 10px;
+  background: rgba(37,99,235,0.1); border: 1px solid rgba(37,99,235,0.2);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent); flex-shrink: 0;
+}
+
+/* ─── SKILL ICON TEXT ─── */
+.skill-icon-txt {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .7rem; font-weight: 700;
+  color: var(--accent); letter-spacing: .05em;
+}
+.bts-icon-txt {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .65rem; font-weight: 700; color: var(--accent);
+}
+.t-icon-txt {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .7rem; font-weight: 700; color: var(--accent);
+  min-width: 24px; flex-shrink: 0;
+}
+
+/* ─── PDF EMBED ─── */
+.pdf-embed-wrap {
+  width: 100%;
+  border-radius: 10px; overflow: hidden;
+  border: 1px solid var(--border);
+}
+.pdf-embed {
+  width: 100%; height: 520px; border: none; display: block;
+  background: #fff;
+}
+.pdf-embed-note {
+  font-size: .75rem; color: var(--muted);
+  padding: .6rem 1rem; background: var(--surface);
+  text-align: center;
+}
+.pdf-embed-note a { color: var(--accent); }
